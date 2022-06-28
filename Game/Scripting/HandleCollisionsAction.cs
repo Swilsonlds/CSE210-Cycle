@@ -136,10 +136,11 @@ namespace Unit05.Game.Scripting
                 // create a "game over" message
                 int x = Constants.MAX_X / 2;
                 int y = Constants.MAX_Y / 2;
-                Point position = new Point(x, y);
+                Point position = new Point(750, y);
 
                 Actor message = new Actor();
                 message.SetText("Game Over! Blue Wins!");
+                message.SetFontSize(34);
                 message.SetPosition(position);
                 message.SetColor(BLUE);
                 cast.AddActor("messages", message);
@@ -169,10 +170,11 @@ namespace Unit05.Game.Scripting
                 // create a "game over" message
                 int x = Constants.MAX_X / 2;
                 int y = Constants.MAX_Y / 2;
-                Point position = new Point(x, y);
+                Point position = new Point(750, y);
 
                 Actor message = new Actor();
                 message.SetText("Game Over! Red Wins!");
+                message.SetFontSize(34);                
                 message.SetPosition(position);
                 message.SetColor(RED);
                 cast.AddActor("messages", message);
